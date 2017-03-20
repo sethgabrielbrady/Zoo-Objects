@@ -6,15 +6,20 @@
 
 
   window.zoo.Kakapo = class Kakapo extends Animal {
-          constructor(name, dateOfBirth){
-              super(name, dateOfBirth);
-              this.eats = 'crickets';
-              console.log('Creating an Kakapo');
-            }
+      constructor(name, dateOfBirth){
+          super(name, dateOfBirth);
+          this.eats = 'crickets';
+          console.log('Creating a Kakapo');
+        }
 
-            static nativeTo() {
-              return 'Madagascar';
-            }
+        layEggs(name){
+          let hatchling = new Kakapo();
+          hatchling.name = name;
+          return hatchling;
+        }
+        static scientificName() {
+          return 'Strigops habroptilus';
+        }
 
       };
 }());

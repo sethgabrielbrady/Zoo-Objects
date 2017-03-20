@@ -8,12 +8,21 @@
   window.zoo.Ayeaye = class Ayeaye extends Animal {
           constructor(name, dateOfBirth){
               super(name, dateOfBirth);
-              this.eats = 'Nuts and grubs';
-              console.log('Creating and Aye Aye');
+              console.log('Creating an Aye Aye');
             }
 
-            static nativeTo() {
-              return 'Madagascar';
+            willEat(){
+            return this.name + ' eats fruits, nectar, and fungus';
+            }
+
+            giveBirth(name){
+              let critter = new Ayeaye();
+              critter.name = name;
+              return critter;
+            }
+
+            static scientificName(){
+              return 'Daubentonia madagascariensis';
             }
 
 
