@@ -26,7 +26,11 @@
             return  clutch;
             }
 
-            
+        playFight(number){
+          let minutes = Math.floor(Math.random() * number) +1;
+          return this.name + ' played for ' + minutes + ' minutes.';
+        }
+
         static scientificName() {
           return 'Strigops habroptilus';
         }

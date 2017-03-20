@@ -13,9 +13,9 @@
 
             willEat(snacks){
               if (snacks === 'grubs' || snacks === 'nectar'){
-                console.log(this.name + ' is very happy you fed it');
+                return this.name + ' is very happy to be fed.';
               }else{
-                return this.name + ' only eats grubs and nectar';
+                return this.name + ' only eats grubs and nectar.';
               }
             }
 
@@ -29,9 +29,6 @@
               return 'Daubentonia madagascariensis';
             }
 
-            toString(){
-              return this.name + ' is a ' +  this.constructor.name;
-            }
 
 
 
