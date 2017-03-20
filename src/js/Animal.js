@@ -19,7 +19,7 @@
               let birthYear = this.dob.getFullYear();
               let currentYear = new Date().getFullYear();
               let age = currentYear - birthYear;
-              return age;
+              return this.name + ' is ' + age + ' years old.';
           }
 
           newName(newName){

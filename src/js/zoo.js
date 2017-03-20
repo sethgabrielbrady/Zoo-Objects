@@ -16,15 +16,21 @@
   console.log(tom);
   console.log(tom.toString());
   console.log(tom.age());
+  console.log(tom.willEat('peaches'));
   console.log(Ayeaye.scientificName());
+
   console.log(tom.giveBirth('Sam'));
-  console.log(tom.willEat());
 
   let jerry = new Kakapo ('Jerry', new Date('07/1/1943'));
+  let petunia = new Kakapo ('Petunia', new Date('07/1/1977'));
   console.log(jerry);
+  console.log(petunia);
+
+
   console.log(jerry.toString());
   console.log(jerry.age());
   console.log(Kakapo.scientificName());
+  console.log(petunia.layEggs(3));
 
 
 }());

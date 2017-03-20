@@ -11,8 +11,12 @@
               console.log('Creating an Aye Aye');
             }
 
-            willEat(){
-            return this.name + ' eats fruits, nectar, and fungus';
+            willEat(snacks){
+              if (snacks === 'grubs' || snacks === 'nectar'){
+                console.log(this.name + ' is very happy you fed it');
+              }else{
+                return this.name + ' only eats grubs and nectar';
+              }
             }
 
             giveBirth(name){
@@ -25,6 +29,9 @@
               return 'Daubentonia madagascariensis';
             }
 
+            toString(){
+              return this.name + ' is a ' +  this.constructor.name;
+            }
 
 
 
