@@ -3,7 +3,7 @@
 
   window.zoo = window.zoo || {};
 
-  window.school.Animal = class Animal {
+  window.zoo.Animal = class Animal {
 
           constructor(name, dateOfBirth){
 
