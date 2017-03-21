@@ -15,7 +15,7 @@
     let tom = new Ayeaye('Tom', new Date('02/13/2014'));
     let jane = new Ayeaye('Jane', new Date('06/16/2011'));
     console.log(tom);
-    console.log(tom.toString() +  ' and was born on ' + tom.dob);
+    console.log(tom.toString() + ' and was born on ' + tom.dob);
     console.log(tom.age());
     console.log(tom.willEat('peaches'));
     console.log(jane.willEat('grubs'));

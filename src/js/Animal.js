@@ -3,6 +3,7 @@
 
     window.zoo = window.zoo || {};
 
+
     window.zoo.Animal = class Animal {
 
         /**
@@ -10,11 +11,12 @@
          * to instances of animal]
          * @param  {string} name        [description]
          * @param  {date} dateOfBirth [description]
-         * @return {null}             [description]
+         * @return {void}             [description]
          */
         constructor(name, dateOfBirth) {
 
             this.name = name;
+            //Object.getPrototypeof(dateOfBirth) === Date.prototype
             if (!(dateOfBirth instanceof Date)) {
                 dateOfBirth = new Date();
             }
@@ -24,7 +26,7 @@
         /**
          * [Takes the the birthyear and current year and returns
          * a string containing the age]
-         * @return {string}
+         * @return {string} //this a string concatenated
          */
 
         age() {

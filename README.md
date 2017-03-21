@@ -1,4 +1,19 @@
 # Zoo Objects
+
+## 03/21/17
+## Seth Brady
+
+
+Practice with creating, throwing, and catching errors.
+
+## TO DO
+1. Take our Zoo ``constructors`` and ``methods`` from the previous assignment and add some proper ``Errors`` to them. Any time something occurs that wasn't expected, let's ``throw`` an ``Error``. In our tests, we must then ``try`` our code and ``catch`` our Errors.
+
+2. Create and ``throw`` ``Errors`` from any ``method`` on your animals that should do so... when should you do so? For example, if you have a swim ``method`` on Otter that takes in a duration ``argument`` and someone calls the ``method`` with the ``string`` "a while" (instead of a Number) you should produce a ``TypeError`` since you expected a number.
+You must have ``tests`` for your code that check for (``catch``) your ``errors`` - be sure to check that the ``Error`` you ``catch`` is of the correct ``type``!
+
+
+
 ## 03/20/17
 ## Seth Brady
 

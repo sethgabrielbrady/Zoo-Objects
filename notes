@@ -1,0 +1,88 @@
+
+
+
+_ _ proto _ _
+
+'dunder prototype'
+
+Object.prototype ---> Date.prototype ---> new Date
+
+
+new Date is the dunder prototype in this example
+
+
+HOMEWORK 032117
+
+need to throw some errors is something-  goes wrong
+we need to add error, throw them and catch themt
+
+typerror
+reference error
+reference error
+
+if change things you need to change your docblocks
+
+
+03/21/17
+
+Error  -- is a class
+
+Error
+ child classes of Error
+TypeError
+SyntaxError
+ReferenceError
+
+
+stacktrace is the collection of errors in the console????
+
+
+you can create a new error with 'new Error'
+
+an error will stop the file from running
+
+'throw' is used to tell the JS engine something went wrong
+    -is like a return statement. the function stops
+
+the top of the stacktrace is where we produce the error
+
+
+errors get "thrown" in one place and caught(catch) in another place
+
+//this is a try catch block
+try{ /what you want to try an do
+
+}catch(err){
+
+}
+
+
+we will want to re 'throw'  an error if you are expecting
+a certain kind of error but end up getting a different error.
+We would check for the one kind but IF we get a diff type,
+  throw that error to let someone know that we have a
+  diff type of error.
+
+  finally block -- will always execute. good for doing
+  cleanup.
+
+
+err(ors) have messages
+err.message
+you can just log the err.message and will be converted to a string--
+you wont see the stack trace.
+
+err.stack will show the stack trace
+error will by default choose the line num and message if none
+is provided
+
+
+DEBUGGING
+How can we do this without log messages
+
+SOURCES
+-you can set a break point at whatever line you want in the sources tab
+
+you can make changes inside the source tab to test your code
+
+pause on exception - will pause on certain things
