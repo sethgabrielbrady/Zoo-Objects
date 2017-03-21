@@ -3,7 +3,6 @@
 
     window.zoo = window.zoo || {};
 
-
     window.zoo.Animal = class Animal {
 
         /**
@@ -15,7 +14,13 @@
          */
         constructor(name, dateOfBirth) {
 
-            this.name = name;
+            // ****an error for  string checking
+            if (typeof(name) === 'string') {
+              this.name = name;
+              }else{
+              throw TypeError;
+            }
+
             //Object.getPrototypeof(dateOfBirth) === Date.prototype
             if (!(dateOfBirth instanceof Date)) {
                 dateOfBirth = new Date();
@@ -29,6 +34,8 @@
          * @return {string} //this a string concatenated
          */
 
+
+   //***an error for numbers- lets just return the number here
         age() {
             //need an if to check for a number
             let birthYear = this.dob.getFullYear();
@@ -44,6 +51,8 @@
          * @return {null}
          */
 
+
+        //an error for string  input
         newName(newName) {
             this.name = newName;
         }

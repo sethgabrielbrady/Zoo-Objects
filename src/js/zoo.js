@@ -8,9 +8,18 @@
     let Kakapo = window.zoo.Kakapo;
 
 
+    // let stringTester = new Animal(1, new Date('02/13/2014'));
+    // console.log('This should not have executed');
+
 
     let felicia = new Animal('Felicia');
     // console.log(felicia);
+
+    try {
+    let stringTester = new Ayeaye(1, new Date('02/13/2014'));
+    } catch(err){
+      console.warn(err);
+    }
 
     let tom = new Ayeaye('Tom', new Date('02/13/2014'));
     let jane = new Ayeaye('Jane', new Date('06/16/2011'));
@@ -20,7 +29,7 @@
     console.log(tom.willEat('peaches'));
     console.log(jane.willEat('grubs'));
     console.log(Ayeaye.scientificName());
-    console.log(jane.giveBirth('Sam'));
+    // console.log(jane.giveBirth('Sam'));
 
     let jerry = new Kakapo('Jerry', new Date('07/1/1943'));
     let petunia = new Kakapo('Petunia', new Date('07/1/1977'));

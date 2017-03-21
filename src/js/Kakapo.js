@@ -14,12 +14,21 @@
          * @param  {string} classification [used for it classification]
          * @return {null}             [returns nothing]
          */
-        constructor(name, dateOfBirth, classification) {
+
+        //check for strings-this might tie into the parent
+
+        constructor(name, dateOfBirth) {
+          try{
             super(name, dateOfBirth);
             this.classification = 'bird';
             this.eats = 'crickets';
             // console.log('Creating a Kakapo');
+          }catch(err){
+            console.warn(err);
+          }
+
         }
+
 
 
         /**
@@ -28,6 +37,7 @@
          * @return {array} [array containing instances of Kakapo]
          */
 
+        //check the argument input- lets maybe take value???
         layEggs() {
             let number = Math.floor(Math.random() * 6) + 1;
             let clutch = [];
@@ -46,7 +56,9 @@
          * @param  {number} number [number passed to put into the RNG]
          * @return {[string}
          */
-        playFight(number) {
+
+         //check the argument input-
+         playFight(number) {
             let minutes = Math.floor(Math.random() * number) + 1;
             return this.name + ' played for ' + minutes + ' minutes.';
         }

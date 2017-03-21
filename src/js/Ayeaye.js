@@ -14,11 +14,14 @@
          * @param  {string} classification [used for it classification]
          * @return {null}             [returns nothing]
          */
-        constructor(name, dateOfBirth, classification) {
+
+
+         constructor(name, dateOfBirth) {
             super(name, dateOfBirth);
             this.classification = 'mammal';
-            // console.log('Creating an Aye Aye');
+            console.log('Creating an Aye Aye');
         }
+
 
         /**
          * [Accepts a string as a argument. Returns a statment
@@ -26,6 +29,8 @@
          * @param  {string} snacks [will accept any string as a valid argument]
          * @return {string}        [returns a string no matter what string you give it]
          */
+
+        //check for a string or single string
         willEat(snacks) {
             if (snacks === 'grubs' || snacks === 'nectar') {
                 return this.name + ' is very happy to be fed.';
@@ -41,6 +46,7 @@
          * @return {object}      [returns a new instance]
          */
 
+         //check for a string--THERE IS PROBLEM HERE
         giveBirth(name) {
             let critter = new Ayeaye();
             critter.name = name;

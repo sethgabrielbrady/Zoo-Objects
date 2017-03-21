@@ -13,6 +13,24 @@ Practice with creating, throwing, and catching errors.
 You must have ``tests`` for your code that check for (``catch``) your ``errors`` - be sure to check that the ``Error`` you ``catch`` is of the correct ``type``!
 
 
+//DELETE ALL THIS BEFORE SUBMITTING TO NEWLINE
+
+Animal.js (17, 34 51)
+
+Kakapo.js (18, 33, 54)
+
+Ayeaye.js (18, 32, 48 )
+
+zoo.js (check errors on all the arguments pass as strings to   name the classes)
+
+DONT  FORGET TO ADD NEW docblocks
+
+
+//DELETE ALL THIS BEFORE SUBMITTING TO NEWLINE
+
+
+
+
 
 ## 03/20/17
 ## Seth Brady
