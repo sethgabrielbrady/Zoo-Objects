@@ -6,8 +6,8 @@
     window.zoo.Animal = class Animal {
 
         /**
-         * [takea a string and date ans assigns those arguments
-         *  to instances of animal]
+         * [Takes a string and date and assigns those arguments
+         * to instances of animal]
          * @param  {string} name        [description]
          * @param  {date} dateOfBirth [description]
          * @return {null}             [description]
@@ -36,8 +36,8 @@
         }
 
         /**
-         * [Takes a string  as and replaces the current name with the
-         * new one inside the class]
+         * [Takes a string as an argument and replaces the current name with the
+         * new string]
          * @param  {string} newName
          * @return {null}
          */

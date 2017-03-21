@@ -7,8 +7,8 @@
 
     window.zoo.Ayeaye = class Ayeaye extends Animal {
         /**
-         * [Takes two strings and date ans assigns those arguments
-         *  to instances of AyeAye]
+         * [Takes two strings and date and assigns those arguments
+         * to instances of AyeAye]
          * @param  {string} name        [used insntance name]
          * @param  {date} dateOfBirth [used for the instance date of birth]
          * @param  {string} classification [used for it classification]
@@ -21,8 +21,8 @@
         }
 
         /**
-         * [accepts a string as a parameter. return a statment
-         * based what is given as an argument]
+         * [Accepts a string as a argument. Returns a statment
+         * based what is given]
          * @param  {string} snacks [will accept any string as a valid argument]
          * @return {string}        [returns a string no matter what string you give it]
          */
@@ -35,8 +35,8 @@
         }
 
         /**
-         * [accepts tring as an argument and creates 1 instance of
-         *  the Ayeaye class]
+         * [Accepts tring as an argument and creates 1 instance of
+         * the Ayeaye class]
          * @param  {string} name [used for naming the new instance]
          * @return {object}      [returns a new instance]
          */

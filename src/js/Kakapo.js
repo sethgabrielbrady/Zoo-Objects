@@ -8,7 +8,7 @@
     window.zoo.Kakapo = class Kakapo extends Animal {
         /**
          * [Takes two strings and date ans assigns those arguments
-         *  to instances of Kakpo]
+         * to instances of Kakpo]
          * @param  {string} name        [used insntance name]
          * @param  {date} dateOfBirth [used for the instance date of birth]
          * @param  {string} classification [used for it classification]
@@ -23,8 +23,8 @@
 
 
         /**
-         * [returns an array of objects with a count determined
-         * by a random number between 1 and 6
+         * [Returns an array of objects with a count determined
+         * by a random number between 1 and 6]
          * @return {array} [array containing instances of Kakapo]
          */
 
@@ -40,8 +40,8 @@
         }
 
         /**
-         * [Wll generate a random number between 1 and the
-         * number given to it as a n argument to determine
+         * [Will generate a random number between 1 and the
+         * number given to it as an argument to determine
          * how much time a kakapo will play fight]
          * @param  {number} number [number passed to put into the RNG]
          * @return {[string}
