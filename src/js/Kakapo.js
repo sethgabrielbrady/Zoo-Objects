@@ -56,7 +56,7 @@
         }
 
         toString() {
-            return this.name + ' is a ' + this.constructor.name;
+            return this.name + ' is an ' + this.constructor.name;
         }
 
 

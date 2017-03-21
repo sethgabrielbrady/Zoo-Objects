@@ -50,6 +50,9 @@
         static scientificName() {
             return 'Scientific name: Daubentonia madagascariensis';
         }
+        toString() {
+            return this.name + ' is an ' + this.constructor.name;
+        }
 
     };
 

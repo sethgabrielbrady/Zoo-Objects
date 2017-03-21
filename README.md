@@ -1,4 +1,4 @@
-# Zoo
+# Zoo Objects
 ## 03/20/17
 ## Seth Brady
 
@@ -6,12 +6,8 @@ Practice writing classes, constructor functions, parent and child objects, class
 
 
 HOW TO GET STARTED
-1.  clone repos
+1.  clone repo
 2.  Run http-server
-
-
-HOW TO RUN THE TESTS
-  npm test
 
 
 ## TO DO
@@ -31,3 +27,10 @@ HOW TO RUN THE TESTS
   For example, parrots can speak, lions can roar, otters can swim, etc...
   Your species-specific ```method(s)``` MUST take in (and use) at least ```one argument```. For example, a swim method might take the argument: duration and return how far the animal swam in that time (speed * duration)
   All species must re-implement the ```toString()``` method to print out what species it is.
+
+
+## Future Updates
+
+1. Dependencies have been added for testing using mocha, chai, and karma. A spec file will be added to later to use those dependencies.
+
+2. A future update will dis-allow the creation of animal classes directly and only allow for species specific class instances.
