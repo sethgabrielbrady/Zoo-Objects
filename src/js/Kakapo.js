@@ -39,14 +39,19 @@
 
         //check the argument input- lets maybe take value???
         layEggs() {
-            let number = Math.floor(Math.random() * 6) + 1;
-            let clutch = [];
-            for (let i = 1; i <= number; i++) {
-                let name = 'hatchling ' + i;
-                let hatchling = new Kakapo(name);
-                clutch.push(hatchling.name);
+          let number = Math.floor(Math.random() * 6) + 1;
+
+          if (typeof(number) === 'number') {
+              let clutch = [];
+              for (let i = 1; i <= number; i++) {
+                  let name = 'hatchling ' + i;
+                  let hatchling = new Kakapo(name);
+                  clutch.push(hatchling.name);
+              }
+              return clutch;
+          } else {
+              throw TypeError('Please use a Date');
             }
-            return clutch;
         }
 
         /**
@@ -59,8 +64,13 @@
 
          //check the argument input-
          playFight(number) {
-            let minutes = Math.floor(Math.random() * number) + 1;
-            return this.name + ' played for ' + minutes + ' minutes.';
+           if (typeof(number) === 'number'){
+             let minutes = Math.floor(Math.random() * number) + 1;
+             return this.name + ' played for ' + minutes + ' minutes.';
+           }else{
+             throw TypeError('Please use a number here');
+           }
+
         }
 
         static scientificName() {

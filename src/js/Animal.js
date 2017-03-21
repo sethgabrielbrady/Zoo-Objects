@@ -16,14 +16,15 @@
 
             // ****an error for  string checking
             if (typeof(name) === 'string') {
-              this.name = name;
-              }else{
-              throw TypeError;
+                this.name = name;
+            } else {
+                throw TypeError('Please use a string');
             }
 
             //Object.getPrototypeof(dateOfBirth) === Date.prototype
-            if (!(dateOfBirth instanceof Date)) {
+            if (!(dateOfBirth instanceof Date) || (typeof(dateOfBirth) === undefined)){
                 dateOfBirth = new Date();
+
             }
             this.dob = dateOfBirth;
         }
@@ -33,15 +34,17 @@
          * a string containing the age]
          * @return {string} //this a string concatenated
          */
-
-
-   //***an error for numbers- lets just return the number here
-        age() {
+        age() { //this shouldnt get an error because we don't pass it anythinf
             //need an if to check for a number
             let birthYear = this.dob.getFullYear();
             let currentYear = new Date().getFullYear();
-            let age = currentYear - birthYear;
-            return this.name + ' is ' + age + ' years old.';
+            if ((currentYear instanceof Date) && (birthYear instanceof Date)) {
+                let age = currentYear - birthYear;
+                return this.name + ' is ' + age + ' years old.';
+            } else {
+                throw TypeError('Please use a Date');
+
+            }
         }
 
         /**
@@ -50,11 +53,14 @@
          * @param  {string} newName
          * @return {null}
          */
-
-
         //an error for string  input
         newName(newName) {
-            this.name = newName;
+            if (typeof(newName) === 'string') {
+                this.name = newName;
+            } else {
+                throw TypeError('Please use a string');
+            }
+
         }
 
 
