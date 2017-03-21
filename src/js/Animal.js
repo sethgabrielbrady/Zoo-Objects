@@ -3,19 +3,16 @@
 
     window.zoo = window.zoo || {};
 
-
-
-
     window.zoo.Animal = class Animal {
 
-          /**
-           * [takea a string and date ans assigns those arguments
-           *  to instances of animal]
-           * @param  {string} name        [description]
-           * @param  {date} dateOfBirth [description]
-           * @return {null}             [description]
-           */
-       constructor(name, dateOfBirth) {
+        /**
+         * [takea a string and date ans assigns those arguments
+         *  to instances of animal]
+         * @param  {string} name        [description]
+         * @param  {date} dateOfBirth [description]
+         * @return {null}             [description]
+         */
+        constructor(name, dateOfBirth) {
 
             this.name = name;
             if (!(dateOfBirth instanceof Date)) {
@@ -24,8 +21,11 @@
             this.dob = dateOfBirth;
         }
 
-
-
+        /**
+         * [Takes the the birthyear and current year and returns
+         * a string containing the age]
+         * @return {string}
+         */
 
         age() {
             //need an if to check for a number
@@ -34,6 +34,13 @@
             let age = currentYear - birthYear;
             return this.name + ' is ' + age + ' years old.';
         }
+
+        /**
+         * [Takes a string  as and replaces the current name with the
+         * new one inside the class]
+         * @param  {string} newName
+         * @return {null}
+         */
 
         newName(newName) {
             this.name = newName;
@@ -44,7 +51,5 @@
             return this.name + ' was born in ' + this.dob.getFullYear();
         }
 
-
     };
-
 }());

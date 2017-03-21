@@ -31,8 +31,8 @@
     console.log(jerry.toString());
     console.log(jerry.age());
     console.log(Kakapo.scientificName());
-    console.log(petunia.playFight(10));
-    console.log(petunia.layEggs(3));
+    console.log(petunia.playFight(20));
+    console.log(petunia.layEggs());
 
 
 }());
