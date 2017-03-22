@@ -1,9 +1,16 @@
 # Zoo Objects
-
-## 03/21/17
 ## Seth Brady
 
 
+
+
+
+HOW TO GET STARTED
+1.  clone repo
+2.  Run http-server
+
+
+## 03/21/17
 Practice with creating, throwing, and catching errors.
 
 ## TO DO
@@ -13,34 +20,9 @@ Practice with creating, throwing, and catching errors.
 You must have ``tests`` for your code that check for (``catch``) your ``errors`` - be sure to check that the ``Error`` you ``catch`` is of the correct ``type``!
 
 
-//DELETE ALL THIS BEFORE SUBMITTING TO NEWLINE
-
-Animal.js (17, 34 51)
-
-Kakapo.js (18, 33, 54)
-
-Ayeaye.js (18, 32, 48 )
-
-zoo.js (check errors on all the arguments pass as strings to   name the classes)
-
-DONT  FORGET TO ADD NEW docblocks
-
-
-//DELETE ALL THIS BEFORE SUBMITTING TO NEWLINE
-
-
-
-
 
 ## 03/20/17
-## Seth Brady
-
 Practice writing classes, constructor functions, parent and child objects, class methods, static methods, docblocks, installing  dependencies.
-
-
-HOW TO GET STARTED
-1.  clone repo
-2.  Run http-server
 
 
 ## TO DO
@@ -63,7 +45,6 @@ HOW TO GET STARTED
 
 
 ## Future Updates
-
 1. Dependencies have been added for testing using mocha, chai, and karma. A spec file will be added to later to use those dependencies.
 
 2. A future update will dis-allow the creation of animal classes directly and only allow for species specific class instances.

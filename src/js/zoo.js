@@ -6,10 +6,9 @@
     let Animal = window.zoo.Animal;
     let Ayeaye = window.zoo.Ayeaye;
     let Kakapo = window.zoo.Kakapo;
+    
 
-
-    // console.log('This should not have executed');
-
+//new instances of Animal, Ayeaye, and Kakapo
     let felicia = new Animal('Felicia');
     let tom = new Ayeaye('Tom', new Date('02/13/2014'));
     let jane = new Ayeaye('Jane', new Date('06/16/2011'));
@@ -17,7 +16,7 @@
     let petunia = new Kakapo('Petunia', new Date('07/1/1977'));
 
 
-
+//error checking
     try {
         let stringTester = new Animal(1, new Date('02/13/2014'));
         console.log(stringTester);
@@ -41,7 +40,6 @@
         console.warn(err);
     }
 
-    //error test
     try {
         tom.newName(1);
     } catch (err) {
@@ -53,14 +51,13 @@
     } catch (err) {
         console.warn(err);
     }
-    //error test
+
     try {
         jane.willEat(NaN);
     } catch (err) {
         console.warn(err);
     }
 
-    //error test
     try {
         petunia.playFight([1, 3, 5]);
     } catch (err) {
@@ -68,7 +65,7 @@
     }
 
 
-
+//checking various class methods
     console.log(felicia);
 
     console.log(tom);
@@ -87,7 +84,5 @@
     console.log(Kakapo.scientificName());
     console.log(petunia.playFight(20));
     console.log(petunia.layEggs());
-
-
 
 }());

@@ -2,37 +2,35 @@
     'use strict';
 
     window.zoo = window.zoo || {};
-
     window.zoo.Animal = class Animal {
 
         /**
          * [Takes a string and date and assigns those arguments
-         * to instances of animal]
-         * @param  {string} name        [description]
-         * @param  {date} dateOfBirth [description]
-         * @return {void}             [description]
+         *  to instances of animal]
+         * @param  {string} name       [Used insntance name]
+         * @param  {date}  dateOfBirth [Used for the instance date of birth]
+         * @throws {TypeError}         [When no string is provided]
+         * @return {void}
          */
         constructor(name, dateOfBirth) {
-
-            // ****an error for  string checking
             if (typeof(name) === 'string') {
                 this.name = name;
             } else {
                 throw TypeError('Please use a string');
             }
-
-            //Object.getPrototypeof(dateOfBirth) === Date.prototype
             if (!(dateOfBirth instanceof Date)) {
                 dateOfBirth = new Date();
-
             }
             this.dob = dateOfBirth;
         }
 
         /**
          * [Takes the the birthyear and current year and returns
-         * a string containing the age]
-         * @return {string} //this a string concatenated
+         *  a string containing the age]
+         * @throws {TypeError}        [When something other than a date is given
+         *                              in either variable]
+         * @return {string}           [this a string concatenated but age is actually
+         *                             a number]
          */
         age() {
             let birthYear = this.dob;
@@ -50,9 +48,10 @@
 
         /**
          * [Takes a string as an argument and replaces the current name with the
-         * new string]
+         *  new string]
          * @param  {string} newName
-         * @return {null}
+         * @throws {TypeError}      [When something other than a string is givien]
+         * @return {void}
          */
         newName(newName) {
             if (typeof(newName) === 'string') {
@@ -62,7 +61,6 @@
             }
 
         }
-
 
         toString() {
             return this.name + ' was born in ' + this.dob.getFullYear();
