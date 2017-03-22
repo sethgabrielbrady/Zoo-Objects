@@ -18,18 +18,16 @@
         //check for strings-this might tie into the parent
 
         constructor(name, dateOfBirth) {
-          try{
-            super(name, dateOfBirth);
-            this.classification = 'bird';
-            this.eats = 'crickets';
-            // console.log('Creating a Kakapo');
-          }catch(err){
-            console.warn(err);
-          }
+            try {
+                super(name, dateOfBirth);
+                this.classification = 'bird';
+                this.eats = 'crickets';
+                // console.log('Creating a Kakapo');
+            } catch (err) {
+                console.warn(err);
+            }
 
         }
-
-
 
         /**
          * [Returns an array of objects with a count determined
@@ -39,18 +37,18 @@
 
         //check the argument input- lets maybe take value???
         layEggs() {
-          let number = Math.floor(Math.random() * 6) + 1;
+            let number = Math.floor(Math.random() * 6) + 1;
 
-          if (typeof(number) === 'number') {
-              let clutch = [];
-              for (let i = 1; i <= number; i++) {
-                  let name = 'hatchling ' + i;
-                  let hatchling = new Kakapo(name);
-                  clutch.push(hatchling.name);
-              }
-              return clutch;
-          } else {
-              throw TypeError('Please use a Date');
+            if (typeof(number) === 'number') {
+                let clutch = [];
+                for (let i = 1; i <= number; i++) {
+                    let name = 'hatchling ' + i;
+                    let hatchling = new Kakapo(name);
+                    clutch.push(hatchling.name);
+                }
+                return clutch;
+            } else {
+                throw TypeError('Please use a Date');
             }
         }
 
@@ -62,14 +60,14 @@
          * @return {[string}
          */
 
-         //check the argument input-
-         playFight(number) {
-           if (typeof(number) === 'number'){
-             let minutes = Math.floor(Math.random() * number) + 1;
-             return this.name + ' played for ' + minutes + ' minutes.';
-           }else{
-             throw TypeError('Please use a number here');
-           }
+        //check the argument input-
+        playFight(number) {
+            if (typeof(number) === 'number') {
+                let minutes = Math.floor(Math.random() * number) + 1;
+                return this.name + ' played for ' + minutes + ' minutes.';
+            } else {
+                throw TypeError('Please use a number here');
+            }
 
         }
 

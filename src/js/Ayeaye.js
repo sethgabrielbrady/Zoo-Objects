@@ -15,13 +15,11 @@
          * @return {null}             [returns nothing]
          */
 
-
-        constructor(name, dateOfBirth) {
+         constructor(name, dateOfBirth) {
             super(name, dateOfBirth);
             this.classification = 'mammal';
             console.log('Creating an Aye Aye');
         }
-
 
         /**
          * [Accepts a string as a argument. Returns a statment

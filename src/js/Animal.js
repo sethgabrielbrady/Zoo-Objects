@@ -22,7 +22,7 @@
             }
 
             //Object.getPrototypeof(dateOfBirth) === Date.prototype
-            if (!(dateOfBirth instanceof Date) || (typeof(dateOfBirth) === undefined)){
+            if (!(dateOfBirth instanceof Date)) {
                 dateOfBirth = new Date();
 
             }
@@ -34,11 +34,12 @@
          * a string containing the age]
          * @return {string} //this a string concatenated
          */
-        age() { //this shouldnt get an error because we don't pass it anythinf
-            //need an if to check for a number
-            let birthYear = this.dob.getFullYear();
-            let currentYear = new Date().getFullYear();
+        age() {
+            let birthYear = this.dob;
+            let currentYear = new Date();
             if ((currentYear instanceof Date) && (birthYear instanceof Date)) {
+                birthYear = this.dob.getFullYear();
+                currentYear = currentYear.getFullYear();
                 let age = currentYear - birthYear;
                 return this.name + ' is ' + age + ' years old.';
             } else {
@@ -53,7 +54,6 @@
          * @param  {string} newName
          * @return {null}
          */
-        //an error for string  input
         newName(newName) {
             if (typeof(newName) === 'string') {
                 this.name = newName;
