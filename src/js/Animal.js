@@ -62,6 +62,18 @@
 
         }
 
+        /**
+         * [If called, will pass a string to the the 'dob', causing an error in
+         *  age to occur if it is called]
+         * @param  {boolean} isdead [set to true]
+         * @return {void}           [description]
+         */
+        expire(isdead = true) {
+            if (isdead === true) {
+                this.dob = 'dead';
+            }
+        }
+
         toString() {
             return this.name + ' was born in ' + this.dob.getFullYear();
         }

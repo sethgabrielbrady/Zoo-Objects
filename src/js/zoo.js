@@ -6,7 +6,7 @@
     let Animal = window.zoo.Animal;
     let Ayeaye = window.zoo.Ayeaye;
     let Kakapo = window.zoo.Kakapo;
-    
+
 
 //new instances of Animal, Ayeaye, and Kakapo
     let felicia = new Animal('Felicia');
@@ -65,9 +65,17 @@
     }
 
 
+    felicia.expire();
+    try {
+      felicia.age();
+    } catch (err) {
+        console.warn(err);
+    }
+
+
+
 //checking various class methods
     console.log(felicia);
-
     console.log(tom);
     console.log(tom.name);
     console.log(tom.toString() + ' and was born on ' + tom.dob);
